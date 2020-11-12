@@ -9,9 +9,9 @@ type DataProps = {
     }
 }
 
-const Header: React.FC<DataProps> = ({}) => (
+const Header: React.FC = ({}) => (
 
-    const { data } = useStaticQuery(
+    const { data } = useStaticQuery<DataProps>(
         graphql`
             query {
             site {
